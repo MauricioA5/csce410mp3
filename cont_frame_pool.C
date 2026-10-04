@@ -10,6 +10,8 @@
 #include "utils.H"
 #include "assert.H"
 
+ContFramePool * ContFramePool::head = nullptr;
+
 
 ContFramePool::FrameState ContFramePool::get_state(unsigned long _frame_no)
 {
